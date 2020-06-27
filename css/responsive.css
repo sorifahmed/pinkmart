@@ -1,0 +1,61 @@
+@media screen and (max-width: 992px){
+.header{
+	display: none;
+}
+.slider {
+    top:0px;
+}
+#modalActivate{
+	display: none;
+}
+.navbar{
+	display: none;
+}
+.menu{
+	display: none;
+}
+.bag {
+    margin-top: 21px;
+   margin-right: -12px;
+}
+.top_product img {
+    height: 205px;
+}
+.brand_section .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.footer_top .col-md-6{
+	flex: 0 0 100%;
+    max-width: 100%;
+}
+.header_search{
+	display:block; 
+}
+.element-item{
+	width:33.33%;
+}
+}
+
+@media screen and (max-width: 767px){
+.banner_section{
+	text-align: center;
+}	
+.banner_wrap{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.banner_wrap img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.subscribe input.form-control {
+    width: 70%;
+    margin-left: 11px;
+}
+.element-item{
+	width:50%;
+}
+}
+

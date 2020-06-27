@@ -1,0 +1,483 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pinkmart</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="text/css" href="img/Favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <meta name="theme-color" content="#fafafa">
+ <script type="text/javascript" src="engine1/jquery.js"></script>
+ </head>
+ <body>
+<!------------------------------------------------ Header-top  --------------------------------------------------------->
+<header class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="header_left">
+          <ul>
+            <li><i class="fa fa-headphones"></i>(818) 245121536Clients</li>
+            <li>Open Line All Day Long</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="header_right pull-right">
+          <ul>
+            <li><i class="fa fa-user"></i>LOGIN</li>
+            <li><i class="fa fa-exchange"></i>COMPARE</li>
+          </ul>
+          <div class="social pull-right">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!------------------------------------------------ Header-Search-bar -------------------------------------------------->
+<section class="header_search">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-8 col-sm-8 col-md-8">
+          <div class="search_bar">
+              <img class="logo" src="img/edmo14widgetlogo.svg">
+            <input type="" class="form-control" id="exampleInputPassword1" placeholder="Search Products">
+          </div>
+      </div>
+      <div class="col-4 col-sm-4 col-md-4">
+        <div class="bag pull-right">
+            <ul>
+                <li><i id="search" class="fa fa-search"></i></li>
+                <li><i class="fa fa-heart"></i><span>0</span></li>
+                <li><i class="fa fa-shopping-cart"></i><span>0</span></li>
+                <li>
+                 <a href="#id" onclick="openSlideMenu()"><i class="fa fa-bars"></i></a>
+              </li>
+           </ul>
+        </div>
+        <!--------------------------  Sidebar-menu  -------------------------------->
+         <div id="content">
+           <span class="slide">
+           </span>
+             <div id="menu" class="nav">
+                <h4>NAVIGATION</h4>
+               <a href="#id"class="close" onclick="closeSlideMenu()">
+                 <i class="fa fa-times"></i>
+               </a>
+             <div class="mainmenu">
+               <ul>
+                 <li><a href="#">DEMOS</a></li>
+                 <li><a href="#">SHOP</a></li>
+                 <li><a href="#">PAGE</a></li>
+                 <li><a href="#">ELEMENTS</a></li>
+                 <li><a href="#">BLOG</a></li>
+               </ul>
+             </div>
+             </div>
+         </div>  
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------ Menu  --------------------------------------------------------->
+<section class="menu">
+  <div class="container">
+    <div class="row">
+     <div class="col-md-8">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="img/demo14logo4.svg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">DEMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PAGE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ELEMENTS</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+    <div class="col-md-4">
+        <div class="bag pull-right">
+          <ul>
+            <li class="ourmodal">
+               <button id="modalActivate" type="button" data-toggle="modal" data-target="#exampleModalPreview">
+                <i class="fa fa-search"></i>
+                </button>
+                  <!-- Modal -->
+                  <div style="padding-right:0px !important" class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+                      <div class="modal-dialog momodel modal-fluid" role="document">
+                          <div class="modal-content ">
+                              <div class=" modal-header text-center">
+                                  <button  type="button" class="close " data-dismiss="modal" aria-label="Close">
+                                      <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                                  <div class="modal_search">
+                                      <form>
+                                       <input type="text" placeholder="Search.." name="search">
+                                         <i class="fa fa-search"></i> 
+                                    </form>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+            <!-- Modal -->
+            </li>
+            <li><i class="fa fa-heart"></i><span>0</span></li>
+            <li><i class="fa fa-shopping-cart"></i><span>0</span></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!--------------------------------------------------- Slider --------------------------------------------------------->
+<section class="slider">
+  <div id="wowslider-container1">
+  <div class="ws_images"><ul>
+    <li><img src="data1/images/slider01.jpg" alt=" " title=" " id="wows1_0"/></li>
+    <li><a href="#"><img src="data1/images/leftinitialbanner2.jpg" alt="bootstrap image slider" title=" " id="wows1_1"/></a></li>
+    <li><img src="data1/images/watchmechanism.jpg" alt=" " title=" " id="wows1_2"/></li>
+  </ul></div>
+  <div class="ws_bullets"><div>
+    <a href="#" title=" "><span><img src="data1/tooltips/slider01.jpg" alt=" "/></span></a>
+    <a href="#" title=" "><span><img src="data1/tooltips/leftinitialbanner2.jpg" alt=" "/></span></a>
+    <a href="#" title=" "><span><img src="data1/tooltips/watchmechanism.jpg" alt=" "/></span></a>
+  </div></div>
+  <div class="ws_shadow"></div>
+  </div>  
+</section> 
+<!--------------------------------------------------- New-products  ---------------------------------------------------->
+<section class="new_product">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="top_product">
+          <img  src="img/product1.jpg">
+          <div class="new_pro_text">
+            <h3>Explore Collections</h3>
+            <h4>Perfect Match</h4>
+            <button type="button" class="btn btn-success">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="top_product">
+          <img  src="img/product.jpg">
+          <div class="new_pro_text">
+            <h3>Explore Collections</h3>
+            <h4>Perfect Match</h4>
+            <button type="button" class="btn btn-success">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------- banner-section  -------------------------------------------------->
+<section class="banner_section">
+  <div class="container">
+    <div class="banner_title text-center">
+        <h4>Introducing</h4>
+        <h2>Harry Winston</h2>
+        <h5> Midnight Gothic Moon Phases</h5>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="banner_wrap">
+          <i class="fa fa-cog"></i>
+          <h3>Swiss Engineering</h3>
+          <p>if a buyer is not satisfied<br/>products or service</p>
+        </div>
+        <div class="banner_wrap">
+           <i class="fa fa-cog"></i>
+          <h3>Royal Look</h3>
+          <p>if a buyer is not satisfied<br/>products or service</p>
+        </div>
+      </div>
+       <div class="col-md-6">
+        <div class="banner_wrap">
+           <img src="img/Watch-mechanism.jpg">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="banner_wrap_2">
+           <i class="fa fa-cog"></i>
+          <h3>Premium Sapphire</h3>
+          <p>if a buyer is not satisfied<br/>products or service</p>
+        </div>
+         <div class="banner_wrap_2">
+          <i class="fa fa-cog"></i>
+          <h3>Pendulum Move</h3>
+          <p>if a buyer is not satisfied<br/>products or service</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------- Isotop  -------------------------------------------------->
+<section class="isotop">
+  <div class="container">
+       <div class="banner_title text-center">
+        <h4>Our Timeless</h4>
+        <h2>Timepieces</h2>
+        <h3> Unparalleled Portfolio<br/>Of Timepieces</h3>
+    </div>
+  <div id="filters" class="button-group"> 
+    <button class="button is-checked" data-filter="*"><i class="fa fa-shopping-bag"></i>BEST SELLER</button>
+    <button class="button" data-filter=".metal"><i class="fa fa-star"></i>RECENT</button>
+    <button class="button" data-filter=".transition"><i class="fa fa-star"></i>FEATURED</button>
+  </div>
+<div class="grid">
+    <div class="element-item transition" data-category="transition">
+       <img src="img/1-4-248x300.jpg">
+    </div>
+    <div class="element-item metalloid metal" data-category="metalloid">
+      <img src="img/1-4-248x300.jpg">
+    </div>
+    <div class="element-item post-transition metal " data-category="post-transition">
+      <img src="img/1-8-248x300.jpg">
+    </div>
+    <div class="element-item post-transition metal " data-category="post-transition">
+      <img src="img/2-2-1fetaures-248x300.jpg">
+    </div>
+    <div class="element-item transition " data-category="transition">
+      <img src="img/2-6-600x725-248x300.jpg">
+    </div>
+    <div class="element-item alkali metal transition" data-category="alkali">
+     <img src="img/2-8-248x300.jpg">
+    </div>
+    <div class="element-item alkali " data-category="alkali">
+      <img src="img/1-1-248x300.jpg">
+    </div>
+    <div class="element-item transition metal" data-category="transition">
+      <img src="img/1-4-248x300.jpg">
+    </div>
+    
+</div>
+  </div>
+</section>
+<!------------------------------------------------ Design-section -------------------------------------------------->
+<section class="Design_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="design_text">
+          <h6>This is us</h6>
+          <h2>Danish Design Watches</h2>
+          <p> We are very passionate about our work. You can say we love the watches that we offer to our customers. And, every time we sell one – we are actually giving a piece of our heart to them.</p>
+          <img  src="img/Asset-3.png">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="design_slider">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/banner-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/banner-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/banner-5.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------ Brand-section -------------------------------------------------->
+<section class="brand_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/001-300x200.png">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/003-300x200.png">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/004-300x200.png">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/005-300x200.png">
+        </div>
+      </div>
+        <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/006-300x200.png">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/007-300x200.png">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/008-300x200.png">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/009-300x200.png">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/010-300x200.png">
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="brand_Bx">
+          <img src="img/001-300x200.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------ Informed -------------------------------------------------->
+<section class="informed">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="subscribe">
+          <h2>Get Informed!</h2>
+          <p>Synonym of Trust and Love for Timekeeping and<br/> Making of timepieces Since 1950.</p>
+            <form>
+                <div class="form-row">
+                    <input type="text" class="form-control" placeholder="Email*">
+                     <button type="button" class="btn btn-success">Subscribe!</button>
+                </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+         <div class="video">
+            <video  loop autoplay muted  id="vid">
+                  <source type="video/mp4" src="img/720p_5_1.mp4"></source>
+                  <source type="video/ogg" src="img/720p_5_1.mp4"></source>
+            </video>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------ footer-top -------------------------------------------------->
+<section class="footer_top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="footer_top_Bx">
+          <img src="img/footer.svg">
+          <p><strong>kitestudio</strong> team has consisted of<br/> young passionate developer and<br/> designers who are interested in<br/> creating state of the art themes.</p>
+          <div class="footer_Bx">
+            <img src="img/footer1.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+               <div class="footer_top_item">
+                  <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About Us</a></li>
+                  </ul>
+               </div>
+          </div>
+           <div class="col-md-4">
+              <div class="footer_top_item">
+                   <ul>
+                      <li><a href="#">Financing</a></li>
+                      <li><a href="#">Product recyling</a></li>
+                      <li><a href="#">Sustainability</a></li>
+                      <li><a href="#">Gift returns</a></li>
+                  </ul>
+               </div>
+          </div>
+          <div class="col-md-4">
+               <div class="footer_top_item">
+                  <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Send feedback</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                  </ul>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------ footer -------------------------------------------------->
+<footer class="footer">
+  <div class="container"> 
+     <div class="copy_right">
+       <p>© 2020 KiteStudio | Built With The pinkmart Theme</p>
+     </div>
+     <div class="social_icon">
+       <i class="fa fa-facebook"></i>
+       <i class="fa fa-twitter"></i>
+       <i class="fa fa-linkedin"></i>
+     </div>
+  </div>
+</footer>
+ <!------------------------------------------------ scroll img -------------------------------------------------->
+<div class="scroll_top">
+  <img src="img/scroll.png">
+</div>
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/isotop.js"></script>
+  <script src="js/function.min.js"></script>
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
